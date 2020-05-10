@@ -92,7 +92,7 @@ function newgame() {
     roundScores = [0, 0];
     active = 0;
 
-    document.getElementById('score-0').textContent = '0';
+    document.querySelector('#score-0').textContent = '0';
     document.getElementById('score-1').textContent = '0';
     document.getElementById('currScore-0').textContent = '0';
     document.getElementById('currScore-1').textContent = '0';
