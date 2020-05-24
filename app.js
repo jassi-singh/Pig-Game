@@ -1,12 +1,10 @@
 /*
 GAME RULES:
-
 - The game has 2 players, playing in rounds
 - In each turn, a player rolls a dice as many times as he whishes. Each result get added to his ROUND score
 - BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn
 - The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn
 - The first player to reach 100 points on GLOBAL score wins the game
-
 */
 
 var scores, roundScores, active;
@@ -88,6 +86,9 @@ function round() {
 }
 
 function newgame() {
+
+    alert('GAME RULES: \n-2 players game, playing in rounds \n-In each turn,Rolling Dice ADD score to CURRENT \n-BUT,if DICE == 1, CURRENT SCORE become-> 00 and TURN CHANGE\n-By HOLD all CURRENT score goes to TOTAL score and TURN CHANGE\n-First player to reach TOTAL 100 points WINS the game')
+
     scores = [0, 0];
     roundScores = [0, 0];
     active = 0;
